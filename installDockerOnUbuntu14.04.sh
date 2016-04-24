@@ -8,7 +8,6 @@ DOCKER_LISTS=/etc/apt/sources.list.d/docker.list
 # +---------------+
 
 # Update package information, ensure that APT works with the https method, and that CA certificates are installed.
-sudo apt-get update
 sudo apt-get install apt-transport-https ca-certificates -y
 
 # Add the new GPG key.
@@ -19,9 +18,6 @@ sudo touch $DOCKER_LISTS
 
 # Add an entry for your Ubuntu operating system.
 sudo echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > $DOCKER_LISTS
-
-# Update the APT package index.
-sudo apt-get update
 
 # Purge the old repo if it exists.
 sudo apt-get purge lxc-docker
@@ -35,9 +31,6 @@ sudo apt-cache policy docker-engine
 # | Ubuntu Trusty 14.04             |
 # +---------------------------------+
 
-# Update your package manager.
-sudo apt-get update
-
 # Install the recommended package.
 sudo apt-get install linux-image-extra-$(uname -r)
 
@@ -45,9 +38,6 @@ sudo apt-get install linux-image-extra-$(uname -r)
 # +----------------+
 # | Install Docker |
 # +----------------+
-
-# Update your APT package index.
-sudo apt-get update
 
 # Install Docker.
 sudo apt-get install docker-engine -y
