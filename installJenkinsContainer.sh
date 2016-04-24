@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="budgetmanager/jenkins"
+NAME="aspnet/jenkins"
 cd JenkinsContainer
 
 # build custom jenkins container
