@@ -15,3 +15,4 @@ the src.
 Inside src-folder add a Dockerfile to build your asp.net container with jenkins and add a post-build step over ssh plugin to 
 start docker daemon.
 
+Start script as user because with root access the jenkins homefolder setup will fail 
