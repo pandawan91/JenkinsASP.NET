@@ -19,6 +19,8 @@ sudo touch $DOCKER_LISTS
 # Add an entry for your Ubuntu operating system.
 sudo echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > $DOCKER_LISTS
 
+sudo apt-get update
+
 # Purge the old repo if it exists.
 sudo apt-get purge lxc-docker
 
@@ -31,6 +33,7 @@ sudo apt-cache policy docker-engine
 # | Ubuntu Trusty 14.04             |
 # +---------------------------------+
 
+sudo apt-get update
 # Install the recommended package.
 sudo apt-get install linux-image-extra-$(uname -r)
 
@@ -40,6 +43,7 @@ sudo apt-get install linux-image-extra-$(uname -r)
 # +----------------+
 
 # Install Docker.
+sudo apt-get update
 sudo apt-get install docker-engine -y
 
 # Start the docker daemon.
