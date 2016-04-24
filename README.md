@@ -1,4 +1,4 @@
-# JenkinsASP.NET
+# JenkinsASP.NET work in progress
 Docker Container Setup for CI for ASP.NET WebApps with Jenkins on Ubuntu 14.04
 
 To start the setup, execute the init.sh. This will install and setup your ubuntu environment and will start 
