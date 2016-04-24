@@ -13,4 +13,4 @@ mkdir jenkins
 cd jenkins
 
 # start the container
-sudo docker run --name jenkins -d -p 8080:8080 -p 50000:50000 -v ${pwd}:/var/jenkins_home $NAME
+sudo docker run --name jenkins -d -p 8080:8080 -p 50000:50000 -v $(pwd):/var/jenkins_home $NAME
